@@ -5,10 +5,18 @@
   
 Check out the badges hosted by [shields.io](https://shields.io/).
 
+Links
+-----------------------------
+
+Repository <a href="https://github.com/rschm007/Note_Taker">https://github.com/rschm007/Note_Taker</a>
+
+Deployed Application: <a href="https://mighty-oasis-09563.herokuapp.com/">https://mighty-oasis-09563.herokuapp.com/</a>
 
 ## Description
 
  An application that can be used to write, save, and delete notes. This application uses an express backend and save and retrieve note data from a JSON file.
+ 
+ 
 # Table of Contents
 * [Installation](#installation)
 
@@ -30,6 +38,8 @@ You will need to use npm to npm install the project dependencies. This app uses 
 # Usage
 
 The user can create and save notes on the /notes page. The application also allows users to view previously saved notes. There is also an option to delete previously saved notes. All notes are stored on the application's server backend.
+
+<img src="https://raw.githubusercontent.com/rschm007/Note_Taker/main/public/assets/demo/demo_1.gif" alt="Note Taker app demo gif" style="max-width:100%;">
 
 
 # Contribute
