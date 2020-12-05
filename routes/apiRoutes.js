@@ -53,13 +53,6 @@ module.exports = function (app) {
     }
   });
 
-  // RETRIEVE notes by calling specific ID
-  app.get("/api/notes/:id", function (req, res) {
-    // display JSON object of speficic note array
-    // we find the specific note with req.params.id, which returns the ID parameter.
-    noteData.json(noteData[req.param.id]);
-  });
-
   // DELETE notes
   // use a specific id to identify the note we want to delete
   app.delete("/api/notes/:id", (req, res) => {
@@ -88,13 +81,4 @@ module.exports = function (app) {
       console.log(err);
       }
   });
-
-  // DEFINE updateDB function
-  function updateDB() {
-    fs.writeFile("db/db.json", JSON.stringify(notes, '\t'), err => {
-      if (err) throw err;
-      return true
-    })
-  }
-
 };
